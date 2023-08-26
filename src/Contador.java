@@ -25,7 +25,7 @@ public class Contador {
     }
     static void contar(int primeiroNumero, int segundoNumero ) throws DomainException {
 
-        if (primeiroNumero > segundoNumero) throw DomainException.parametrosInvalidos();
+        if (primeiroNumero >= segundoNumero) throw DomainException.parametrosInvalidos();
 
         int contagem = segundoNumero - primeiroNumero;
 
